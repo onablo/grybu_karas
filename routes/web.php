@@ -37,3 +37,6 @@ Route::get('ka-tu/{grybas}', [GrybasController::class, 'hello']);
 Route::get('spalva/{color}/dydis/{wig}', [GrybasController::class, 'color']);
 
 Route::get('suma/{a}/{b}', [CalcController::class, 'suma']);
+
+Route::get('daugyba', [CalcController::class, 'showDaugyba'])->name('show');
+Route::post('daugyba', [CalcController::class, 'doDaugyba'])->name('do-math');
